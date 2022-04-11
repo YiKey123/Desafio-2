@@ -72,6 +72,23 @@ p {
   margin-right: auto;
   margin-bottom: 35px;
 }
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-template-rows: minmax(10px auto);
+  padding: 10px;
+}
+.container div {
+  background: #f0e6e6;
+  padding: 2em;
+}
+.container div:hover {
+  border: 2px solid rgb(56, 8, 8);
+}
+.container img{
+  width: 80%;
+}
 @media screen and (max-width: 1000px){
   body {
     background-size: 25%;
@@ -102,5 +119,20 @@ p {
   .videos {
     width: 80%;
     height: 250px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(50px auto);
+    padding: 10px;
+    margin:10px;
+  }
+  .container div {
+    background: #6430a7;
+    padding: 1em;
+  }
+  .container div:hover {
+    border: 2px solid rgb(42, 16, 90);
   }
 }
